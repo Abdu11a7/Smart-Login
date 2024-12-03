@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <main
+      id="login_Page"
+      class="py-5 d-flex justify-content-center align-items-center">
+      <div class="container">
+        <form class="text-center p-5 bg-white shadow">
+          <h1 class="mb-4">Smart Login System</h1>
+
+          <input
+            type="text"
+            placeholder="Enter Your Email"
+            name="text"
+            id="uEmail"
+            class="d-block w-100 p-2 mb-4 rounded-1" />
+          <div class="input-holder position-relative">
+            <input
+              type="password"
+              placeholder="Enter Your Password"
+              name="uPassword"
+              id="uPassword"
+              class="d-block w-100 p-2 mb-4 rounded-1" />
+            <div
+              class="show-hide-pass position-absolute top-50 end-0 translate-middle-y me-2">
+              <i class="fa-solid fa-eye-slash hide"></i>
+              <i class="fa-solid fa-eye d-none show"></i>
+            </div>
+          </div>
+          <p class="msg-welcome h6 text-center mt-3"></p>
+
+          <button id="login__Btn" class="d-block w-100 p-2 mb-4 rounded-1">
+            <a href="" class="w-100 d-block">Login</a>
+          </button>
+          <h6>
+            Don&apos;t have an account?
+            <a href="pages/sign.html">Sign Up</a>
+          </h6>
+        </form>
+      </div>
+    </main>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+  </body>
+</html>

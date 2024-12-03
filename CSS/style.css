@@ -1,0 +1,68 @@
+:root {
+  --main-color: #5f41e4;
+  --main-shadow: 0 0 0 0.25rem #d1c4e9;
+  --main-color-darker: #5134d3;
+  --main-transtion: all 0.4s;
+}
+
+a {
+  all: unset;
+}
+#login_Page button,
+#singUp__page button,
+nav .navbar-collapse button {
+  background-color: var(--main-color);
+  border: none;
+  color: white;
+  transition: var(--main-transtion);
+}
+#login_Page button:hover,
+#singUp__page button:hover,
+.navbar-collapse button:hover {
+  background-color: var(--main-color-darker);
+}
+
+input {
+  border: 1px solid var(--main-color);
+  transition: var(--main-transtion);
+}
+input:focus,
+.navbar-toggler:focus {
+  box-shadow: var(--main-shadow);
+  outline: none;
+}
+.navbar-toggler {
+  border: 1px solid var(--main-color);
+}
+form h6 a {
+  color: var(--main-color);
+  cursor: pointer;
+}
+form h6 a:hover {
+  text-decoration: underline;
+}
+.msg-error {
+  color: #dc3545;
+}
+.msg-right {
+  color: #198754;
+}
+i {
+  cursor: pointer;
+}
+.user-name {
+  color: var(--main-color);
+}
+@media (min-width: 768px) {
+  form {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media (max-width: 992px) {
+  .navbar-collapse button {
+    display: block;
+    width: 50%;
+    margin: 2rem auto;
+  }
+}

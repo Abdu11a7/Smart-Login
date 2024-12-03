@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/all.min.css" />
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <main
+      id="singUp__page"
+      class="py-5 d-flex justify-content-center align-items-center">
+      <div class="container">
+        <form class="p-5 bg-white shadow">
+          <h1 class="mb-4">Smart Login System</h1>
+          <div class="inner mb-4">
+            <input
+              type="text"
+              placeholder="Enter Your Name"
+              name="uName"
+              id="signup__Name"
+              class="d-block w-100 p-2 rounded-1" />
+            <div
+              class="error error-name text-danger d-none align-items-center gap-2 mt-1">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <p class="m-0">Please Enter A Valide Name</p>
+            </div>
+          </div>
+          <div class="inner mb-4">
+            <input
+              type="text"
+              placeholder="Enter Your Email"
+              name="uEmail"
+              id="signup__Email"
+              class="d-block w-100 p-2 rounded-1" />
+            <div
+              class="error error-email text-danger d-none align-items-center gap-2 mt-1">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <p class="m-0">Please enter a valide email</p>
+            </div>
+          </div>
+          <div class="inner">
+            <div class="input-holder position-relative">
+              <input
+                type="password"
+                placeholder="Enter Your Password"
+                name="uPassword"
+                id="signup__Pass"
+                class="d-block w-100 p-2 rounded-1" />
+              <div
+                class="show-hide position-absolute top-50 end-0 translate-middle-y me-2">
+                <i class="fa-solid fa-eye-slash hide"></i>
+                <i class="fa-solid fa-eye d-none show"></i>
+              </div>
+            </div>
+            <div
+              class="error error-pass text-danger d-none align-items-center gap-2 mt-1">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <p class="m-0">
+                Please enter atleast 8 character with number, symbol and capital
+                letter
+              </p>
+            </div>
+          </div>
+          <p class="msg-success h6 text-center mt-3"></p>
+
+          <button type="button" class="d-block w-100 p-2 my-4 rounded-1">
+            <a class="d-block" href="../index.html" id="signup__Btn">Sign Up</a>
+          </button>
+          <h6 class="text-center">
+            You have an account? <a href="../index.html">Signin</a>
+          </h6>
+        </form>
+      </div>
+    </main>
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <script src="../JS/main.js"></script>
+  </body>
+</html>
